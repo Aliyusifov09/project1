@@ -1,0 +1,504 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  overflow-x: hidden;
+}
+body .parent .menu {
+  display: flex;
+  justify-content: center;
+  top: 0px;
+  align-items: center;
+  width: 100%;
+  height: 80px;
+  z-index: 2;
+  background-color: transparent;
+  position: sticky;
+  transition: 0.5s;
+}
+body .parent .menu a {
+  color: white;
+  transform: scale(1, 0.95);
+  letter-spacing: 1px;
+  text-decoration: none;
+  margin: 0px 20px;
+  transition: 0.5s;
+}
+body .parent .menu a:hover {
+  color: #bac964;
+}
+body .parent .home {
+  width: 100vw;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: -100px;
+  z-index: -2;
+  height: 109vh;
+  background: url(project2.png);
+  background-size: 100%;
+  color: white;
+}
+body .parent .home div {
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 110vh;
+  width: 100vw;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+body .parent .home div h1 {
+  font-size: 70px;
+  position: relative;
+  top: 160px;
+  font-weight: 300;
+  display: grid;
+  height: 100px;
+  width: 100%;
+}
+body .parent .home div h1 span {
+  width: 700px;
+  font-weight: 800;
+}
+body .parent .home div p {
+  top: -90px;
+  color: rgb(151, 151, 151);
+  font-size: 20px;
+  letter-spacing: 1px;
+  transform: scale(1, 0.85);
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+body .parent .all {
+  background-color: #222222;
+}
+body .parent .all .port {
+  top: -100px;
+  background-color: #222222;
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100vw;
+  height: 200vh;
+}
+body .parent .all .port .text-center h3 {
+  position: relative;
+  top: 150%;
+  color: white;
+  font-weight: 300;
+}
+body .parent .all .port .text-center h3 span {
+  font-weight: 900;
+}
+body .parent .all .port .text-center a {
+  position: relative;
+  top: 50px;
+  margin: 0px 15px;
+  text-decoration: none;
+  color: rgb(126, 126, 126);
+  transition: 0.5s;
+  font-weight: 300;
+}
+body .parent .all .port .text-center a:hover {
+  color: yellow;
+  font-weight: 200;
+}
+body .parent .all .port .images {
+  position: relative;
+  top: -180px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 120vh;
+}
+body .parent .all .port .images .col-md-4 {
+  width: 400px;
+  height: 400px;
+  margin: 30px -10px;
+}
+body .parent .all .port .images .col-md-4 img {
+  width: 350px;
+  height: 350px;
+  margin: 25px 0px;
+}
+body .parent .all .port .images .col-md-4 p {
+  color: white;
+  position: relative;
+  top: -3%;
+  font-weight: 300;
+}
+body .parent .all .port .images .col-md-4 .p1 {
+  font-size: 20px;
+}
+body .parent .all .port .images .col-md-4 .p2 {
+  font-size: 15px;
+  position: relative;
+  top: -5%;
+}
+body .parent .all .resume {
+  display: flex;
+  justify-content: center;
+  color: white;
+}
+body .parent .all .resume h1 {
+  text-align: center;
+  position: relative;
+  bottom: 100px;
+  font-size: 30px;
+  font-weight: 300;
+}
+body .parent .all .resume h1 span {
+  font-weight: 900;
+}
+body .parent .all .resume .col-md-4 {
+  width: 550px;
+}
+body .parent .all .resume .col-md-4 h2 {
+  font-weight: 300;
+  font-size: 25px;
+  position: relative;
+  bottom: 10px;
+}
+body .parent .all .resume .col-md-4 div {
+  padding: 30px;
+  margin-top: 30px;
+  border-radius: 10px;
+  background-color: #333333;
+}
+body .parent .all .resume .col-md-4 div .date {
+  font-size: 10px;
+  font-weight: 700;
+  width: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+body .parent .all .resume .col-md-4 div h4 {
+  color: rgb(167, 188, 6);
+  font-weight: 300;
+  font-size: 19px;
+}
+body .parent .all .resume .col-md-4 div .text {
+  color: rgb(111, 111, 111);
+}
+body .parent .all .resume .col-md-4 div .pl {
+  color: rgb(96, 96, 96);
+}
+body .parent .all .about {
+  position: relative;
+  top: 100px;
+}
+body .parent .all .about .a1 {
+  justify-content: center;
+  display: flex;
+}
+body .parent .all .about .a1 img {
+  margin-left: 130px;
+}
+body .parent .all .about .a1 div {
+  margin-left: 80px;
+  position: relative;
+  top: 40px;
+}
+body .parent .all .about .a1 div h2 {
+  color: white;
+  font-size: 30px;
+  text-align: left;
+  font-weight: 300;
+  margin-bottom: 30px;
+}
+body .parent .all .about .a1 div h2 span {
+  font-weight: 900;
+}
+body .parent .all .about .a1 div p {
+  color: gray;
+  font-weight: 300;
+  width: 410px;
+}
+body .parent .all .about .a1 div .p3 {
+  font-size: 20px;
+}
+body .parent .all .about .a1 div .p4 {
+  font-size: 16px;
+}
+body .parent .all .about .a1 div .b {
+  position: relative;
+  left: -80px;
+}
+body .parent .all .about .a1 div .b button {
+  height: 40px;
+  border-radius: 20px;
+  color: white;
+  border: none;
+  font-weight: 400;
+  font-size: 15px;
+  letter-spacing: 1px;
+}
+body .parent .all .about .a1 div .b button:first-child {
+  width: 120px;
+  background-color: #bac964;
+}
+body .parent .all .about .a1 div .b button:last-child {
+  width: 200px;
+  background-color: #6c757d;
+}
+body .parent .all .about .a2 {
+  padding: 0px 150px;
+  margin-left: 50px;
+}
+body .parent .all .about .a2 h2 {
+  text-align: center;
+  color: white;
+  position: relative;
+  top: 100px;
+  font-size: 30px;
+  font-weight: 300;
+  margin-bottom: 100px;
+}
+body .parent .all .about .a2 h2 span {
+  font-weight: 900;
+}
+body .parent .all .about .a2 .col-md-4 {
+  width: 480px;
+}
+body .parent .all .about .a2 .col-md-4 img {
+  width: 50px;
+  position: relative;
+  left: -80px;
+  bottom: -100px;
+  height: 50px;
+  border-radius: 100%;
+}
+body .parent .all .about .a2 .col-md-4 div {
+  border-radius: 10px;
+  background-color: #333333;
+  height: 210px;
+  color: gray;
+  padding: 20px;
+  margin-top: 50px;
+}
+body .parent .all .about .a2 .col-md-4 div p {
+  font-weight: 300;
+}
+body .parent .all .about .a2 .col-md-4 div p:last-child {
+  font-style: italic;
+  color: #686868;
+}
+body .parent .all .about .a2 .col-md-4 div p:last-child span {
+  color: #bac964;
+}
+body .parent .all .about .a3 {
+  height: 100vh;
+}
+body .parent .all .about .a3 h2 {
+  color: white;
+  position: relative;
+  top: 150px;
+  font-size: 30px;
+  font-weight: 300;
+}
+body .parent .all .about .a3 h2 span {
+  font-weight: 900;
+}
+body .parent .all .about .a3 .col-md-3 {
+  position: relative;
+  top: 100px;
+  margin: 0px 15px;
+  width: 350px;
+  padding: 30px 30px;
+  height: 450px;
+  background-color: #333333;
+}
+body .parent .all .about .a3 .col-md-3 i {
+  background-color: #bac964;
+  font-size: 50px;
+  padding: 30px;
+  border-radius: 50%;
+}
+body .parent .all .about .a3 .col-md-3 h3 {
+  position: relative;
+  top: 20px;
+  font-size: 20px;
+  font-weight: 300;
+  color: white;
+}
+body .parent .all .about .a3 .col-md-3 p {
+  position: relative;
+  top: 30px;
+  color: gray;
+  font-weight: 300;
+}
+body .parent .all .about .a3 .col-md-3 div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 5px;
+  transition: 1s;
+}
+body .parent .all .about .a3 .col-md-3 div a {
+  position: relative;
+  top: 50px;
+  text-decoration: none;
+  color: #bac964;
+  transition: 0.5s;
+  margin: 0px 3px;
+}
+body .parent .all .about .a3 .col-md-3 div a:first-child:hover {
+  margin-right: 10px;
+  padding-right: 10px;
+}
+body .parent .all .about .a3 .col-md-3 div a:last-child:hover {
+  margin-left: 10px;
+  padding-left: 10px;
+}
+body .parent .all .about .a3 .s {
+  height: 420px;
+}
+body .parent .all .about .a4 {
+  margin-top: 100px;
+  height: 100vh;
+}
+body .parent .all .about .a4 h2 {
+  font-weight: 300;
+  margin: 0px auto;
+  margin-bottom: 80px;
+  display: flex;
+  color: white;
+  justify-content: space-around;
+  width: 250px;
+  align-items: center;
+}
+body .parent .all .about .a4 h2 span {
+  font-weight: 900;
+}
+body .parent .all .about .a4 .row .col-md-3 {
+  margin: 0px 25px;
+  width: 350px;
+  height: 500px;
+  background-color: rgb(50, 50, 50);
+  transition: 0.5s;
+}
+body .parent .all .about .a4 .row .col-md-3 img {
+  position: relative;
+  left: -12px;
+  width: 350px;
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+body .parent .all .about .a4 .row .col-md-3 p {
+  margin: 10px 20px;
+}
+body .parent .all .about .a4 .row .col-md-3 .p1 {
+  color: white;
+  margin-top: 20px;
+  font-size: 20px;
+  font-weight: 300;
+}
+body .parent .all .about .a4 .row .col-md-3 .p2 {
+  font-size: 15px;
+  font-weight: 300;
+  color: rgb(148, 148, 148);
+}
+body .parent .all .about .a4 .row .col-md-3 .p3 {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 200px;
+  font-size: 14px;
+  color: rgb(148, 148, 148);
+}
+body .parent .all .about .a4 .row .col-md-3:hover {
+  margin-top: -5px;
+}
+body .parent .all .con div {
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+}
+body .parent .all .con div .h2 {
+  color: white;
+  position: relative;
+  top: 150px;
+  font-size: 30px;
+  text-align: center;
+  font-weight: 300;
+  margin-bottom: 100px;
+}
+body .parent .all .con div .h2 span {
+  font-weight: 900;
+}
+body .parent .all .con div .col-md-5 {
+  margin-left: -150px;
+  display: grid;
+  padding-left: -100px;
+}
+body .parent .all .con div .col-md-5 h2 {
+  position: relative;
+  font-weight: 300;
+  font-size: 30px;
+  color: white;
+  margin-bottom: 50px;
+}
+body .parent .all .con div .col-md-5 input, body .parent .all .con div .col-md-5 textarea {
+  border-radius: 5px;
+  background-color: #333333;
+  border: none;
+  outline: none;
+  width: 600px;
+}
+body .parent .all .con div .col-md-5 input {
+  height: 50px;
+  margin-bottom: 15px;
+}
+body .parent .all .con div .col-md-5 textarea {
+  height: 245px;
+  padding-top: 10px;
+}
+body .parent .all .con div .col-md-5 ::-moz-placeholder {
+  padding-left: 10px;
+  color: rgb(204, 204, 204);
+}
+body .parent .all .con div .col-md-5 ::placeholder {
+  padding-left: 10px;
+  color: rgb(204, 204, 204);
+}
+body .parent .all .con div .col-md-5 button {
+  width: 180px;
+  height: 50px;
+  background-color: rgb(159, 179, 51);
+  color: rgb(255, 255, 255);
+  border: none;
+  margin-top: 30px;
+  border-radius: 50px;
+  cursor: pointer;
+}
+body .parent .all .con div .col-md-4 {
+  width: 315px;
+  margin-left: 50px;
+  display: block;
+}
+body .parent .all .con div .col-md-4 h2 {
+  font-weight: 300;
+  font-size: 30px;
+  text-align: center;
+  color: white;
+  margin-bottom: 50px;
+}
+body .parent .all .con div .col-md-4 li {
+  list-style: none;
+  text-align: left;
+  color: #787678;
+}
+body .parent .all .con div .col-md-4 ul:first-of-type li:nth-of-type(odd) {
+  margin-top: 10px;
+  color: #2c3e50;
+  font-weight: 500;
+}/*# sourceMappingURL=project.css.map */
